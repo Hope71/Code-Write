@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(void)
+{
+    long long int n1,n2; // 38이랑 풀이가 거의 동일
+    
+    scanf("%lld %lld",&n1,&n2);
+    
+    printf("%lld",n1+n2);
+}
