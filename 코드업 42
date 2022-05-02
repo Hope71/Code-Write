@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(void)
+{
+    int a,b;
+    
+    scanf("%d %d",&a,&b);
+    
+    printf("%d",a/b); // 정수형과 정수형 끼리의 나눗셈에서는 몫이 정수만 나올 수 있다 , 가령 1,3이 정수형인 경우에 1/3의 몫은 1/3이 아니라 0이다
+}
