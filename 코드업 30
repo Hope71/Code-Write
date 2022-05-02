@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(void)
+{
+    long long int n; // 더 큰 정수 자료형
+    
+    scanf("%lld",&n);  // long long int 의 서식 지정자
+    
+    printf("%lld",n);
+}
