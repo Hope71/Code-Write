@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(void)
+{
+    long long int n1 ,n2; /* -1073741824 ~ 1073741824 int 형의 최대값인 합은 int 형의 크기보다 더 커지기 때문에 , int 형 보다 더 큰 크기를 가진 long long int 를 사용하여
+                          변수 선언을 하였다 */
+    
+    scanf("%lld %lld",&n1,&n2);
+    
+    printf("%lld",n1+n2);
+    
+}
