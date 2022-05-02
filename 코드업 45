@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(void)
+{
+    int a,b;
+    
+    scanf("%d %d",&a,&b);
+    
+    printf("%d\n",a+b); 
+    printf("%d\n",a-b); 
+    printf("%d\n",a*b);
+    printf("%d\n",a/b);
+    printf("%d\n",a%b);
+    printf("%.2f",(float)a/(float)b); /* 실수, 소수점 이하 셋째 자리에서 반올림해 둘째 자리까지 출력 이므로 명시적 데이터 변환으로 변수 a,b를 실수형으로 변환하고 , %.2f로 출력형태를
+                                      제한한다 */
+}
