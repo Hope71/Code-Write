@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(void)
+{
+    unsigned int a,b; //음(-)이 아닌 정수에 대해서만 연산된다.
+    
+    scanf("%u %u",&a,&b);
+    
+    printf("%u",a%b); // a에서 b를 나눈 나머지
+}
