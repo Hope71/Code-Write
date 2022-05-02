@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(void)
+{
+    long long int a;
+    
+    scanf("%lld",&a);
+    
+    printf("%lld",++a); /* 1을 더한 변수값을 출력하기 위해서 증감연산자를 이용 , 최대 범위 값의 +1 이라면 int 값의 크기에서 벚어나 쓰레기 값이 나오기 때문에 , 크기가 더 큰 자료형인
+    long long int 를 사용 */
+}
