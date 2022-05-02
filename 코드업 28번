@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(void)
+{
+    unsigned int n; // 부호없는 정수만을 저장한다
+    scanf("%u",&n); // %u은 부호없는 10진수의 자료형이다
+    
+    printf("%u",n); 
+}
