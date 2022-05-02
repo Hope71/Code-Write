@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(void)
+{
+    int a;
+    
+    scanf("%d",&a);
+    
+    printf("%d",-a); // 단항 연산자인 -(negative)를 변수 앞에 붙이면 부호가 반대로 바뀌어 계산된다. 값이 음수 양수 상관없이
+}
