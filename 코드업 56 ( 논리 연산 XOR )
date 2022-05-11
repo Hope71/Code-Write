@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(void)
+{
+    int a,b;
+    
+    scanf("%d %d",&a,&b);
+    
+    if(a!=b){               //논리연산 XOR(exclusive or, 배타적 논리합)연산
+        printf("1");
+    }
+    else{
+        printf("0");
+    }
+}
