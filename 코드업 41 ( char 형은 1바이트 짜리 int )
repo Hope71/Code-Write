@@ -3,7 +3,7 @@ int main(void)
 {
     char alpha;
     
-    scanf("%c",&alpha); // char 는 4바이트 짜리 int 라고도 볼 수 있다 
+    scanf("%c",&alpha); // char 는 1바이트 짜리 int 라고도 볼 수 있다 
     
     printf("%c",alpha+1); // 때문에 alpha + 1 의 경우에도 컴파일 에러가 일어나지 않는 것이다
 }
