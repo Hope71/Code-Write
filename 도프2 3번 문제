@@ -1,0 +1,52 @@
+#include<stdio.h>
+int main(void)
+{
+	int arr[10]={0};
+	int num=0;
+	int i=0;
+	int odd=0;
+	int even=0;
+	int keep=0;
+	int fix=0;
+	
+	printf("총 10개의 숫자 입력\n");
+	for(;i<10;i++){
+		scanf("%d",&num);
+		if(num%2==1){
+			odd+=1;
+			arr[odd-1]=num;
+			
+		}	
+		else{
+			even+=1;
+			arr[10-even]=num;
+		}
+	}
+	
+	odd-=1;
+	
+	for(fix=0;fix<=odd;fix++){
+		for(i=0;i+fix<=odd;i++){
+			if(arr[fix]>arr[i+fix]){
+				keep=arr[fix];
+				arr[fix]=arr[fix+i];
+				arr[fix+i]=keep;
+			}
+		}
+	}
+	for(fix=9;odd+1<=fix;fix--){
+		for(i=0;odd+1+i<=fix;i++){
+			if(arr[fix]>arr[fix-i]){
+				keep=arr[fix];
+				arr[fix]=arr[fix-i];
+				arr[fix-i]=keep;
+			}
+		}
+	}
+	printf("배열의 요소 출력:");
+	for(i=0;i<10;i++){
+		printf(" %d",arr[i]);
+	}
+	
+
+}
